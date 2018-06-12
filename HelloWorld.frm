@@ -41,6 +41,24 @@ Begin VB.Form Form1
       Top             =   840
       Width           =   2895
    End
+   Begin VB.Line Line7 
+      X1              =   120
+      X2              =   1200
+      Y1              =   1920
+      Y2              =   1920
+   End
+   Begin VB.Line Line6 
+      X1              =   1200
+      X2              =   120
+      Y1              =   1800
+      Y2              =   1800
+   End
+   Begin VB.Line Line5 
+      X1              =   1200
+      X2              =   120
+      Y1              =   1680
+      Y2              =   1680
+   End
    Begin VB.Line Line4 
       X1              =   1200
       X2              =   1200
@@ -110,8 +128,14 @@ Attribute VB_Exposed = False
 Private Sub Command1_Click()
    If Label2.Visible Then
       Label2.Visible = False
+      Line5.Visible = True
+      Line6.Visible = True
+      Line7.Visible = True
    Else
       Label2.Visible = True
+      Line5.Visible = False
+      Line6.Visible = False
+      Line7.Visible = False
    End If
 End Sub
 
